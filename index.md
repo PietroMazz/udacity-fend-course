@@ -4,7 +4,9 @@ From this site you can reach the projects.
 
 ### Project 1 - Mockup Article
 
-[Project 2 - Animal Card](https://pietromazz.github.io/google-fewd-challenge/project_2/card.html)
+[Project 2 - Animal Trading Card](https://pietromazz.github.io/google-fewd-challenge/project_2/card.html)
+
+[Project 3 - Pixel Art Maker](https://pietromazz.github.io/google-fewd-challenge/project_3/index.html)
 
 
 
