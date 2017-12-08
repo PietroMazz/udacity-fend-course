@@ -1,3 +1,13 @@
+## Intro
+
+From this site you can reach the projects.
+
+### Project 1 - Mockup Article
+
+[Project 2 - Animal Card](https://pietromazz.github.io/google-fewd-challenge/project_2/card.html)
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/PietroMazz/google-fewd-challenge/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
