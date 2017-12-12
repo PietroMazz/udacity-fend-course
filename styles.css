@@ -19,6 +19,7 @@ body {
   height: 5em;
   border-bottom: 2px solid black;
   overflow:hidden;
+  background-color:#fff;
 }
 
 .logo {
