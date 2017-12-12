@@ -18,7 +18,7 @@ h1 {
   font-weight: 900;
 }
 
-#card-container {
+.card-container {
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 10px;
@@ -27,20 +27,20 @@ h1 {
   float: left;
 }
 
-#card-title {
+.card-title {
   font-family: : 'Anton', sans-serif;
   text-align: center;
   color: black;
   text-shadow: 2px 2px 2px #aaa;
 }
 
-#wt-picture {
+.card-picture {
   height: 200px;
   width: 300px;
   border-radius: 10px;
 }
 
-#card-information {
+.card-information {
   width: 300px;
   border: 2px solid #fff;
   background-color: rgba(255, 255, 255, 0.5);
@@ -53,7 +53,7 @@ h1 {
   text-align: justify;
 }
 
-.style-null-list {
+.nobull-list {
   list-style: none;
   padding-left: 0px;
 }
