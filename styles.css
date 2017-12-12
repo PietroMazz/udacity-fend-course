@@ -79,3 +79,8 @@ a:hover {
 a:visited {
   color: red;
 }
+
+header>div>a:visited, header>div>a:hover, header>div>a {
+  color: #626266;
+  text-decoration: none;
+}
