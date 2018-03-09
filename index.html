@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PietroMazz Portfolio</title>
-  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
@@ -13,43 +13,52 @@
   <main>
 
     <header class="header">
-      <h1><a class="header-title" href=""> PietroMazz Portfolio </a></h1>
+      <div id="hamburger-menu" class="touch-button"><i class="fas fa-bars "></i></div>
       <img class="header-logo" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38745/preview.svg" alt="logo">
-    </header>
-
-    <header class="fixed-header">
-      <div id="hamburger-menu"><i class="fas fa-bars touch-button"></i></div>
-      <h1><a class="header-title" href=""> PietroMazz Portfolio </a></h1>
-      <img class="header-logo" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38745/preview.svg" alt="logo">
+      <h1>
+        <a href="./index.html"> PietroMazz Portfolio </a>
+      </h1>
     </header>
 
     <aside id="drawer" class="navigation-menu">
-      <div id="close-menu"><i class="fas fa-times touch-button"></i></div>
+      <div id="close-menu" class="touch-button">
+        <i class="fas fa-times">
+        </i>
+      </div>
       <h2>NAVIGATION MENU</h2>
       <ul>
-        <a href="">
-          <div class="menu-item">
-            <li>PROJECTS</li>
-          </div>
-        </a>
+        <li>
+          <a href="./index.html">
+            <div class="menu-item">
+              PROJECTS
+            </div>
+          </a>
+        </li>
       </ul>
     </aside>
 
     <section class="container social">
       <ul class="social-links">
-        <div>
-          <li>GitHub profile</li>
-        </div>
-        <div>
-          <li>LinkedIn profile</li>
-        </div>
-        <div>
-          <li>Udacity profile</li>
-        </div>
+        <li>
+          <div class="container">
+            GitHub profile
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            LinkedIn profile
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            Udacity profile
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="container welcome">
-      <img class="welcome-image" src="18_9.png" alt="welcome-image">
+      <img class="welcome-picture" src="img/everest-minimalist-wallpaper-blue.png" alt="welcome-image">
       <h2>Front-End Web Developer</h2>
       <p>My Projects:</p>
     </section>
@@ -58,55 +67,76 @@
 
       <article class="article">
         <h2>Udacity: Mockup to Article</h2>
-        <div>
-          <a class="article-picture" href='mockup_to_article/index.html'><img class="article-picture" src="1-6-project-mockup-to-article2x.jpg" alt="Mockup to article image"></a>
+        <div class="container">
+          <a href='mockup_to_article/index.html'>
+            <img class="article-picture" src="img/1-6-project-mockup-to-article2x.jpg" alt="Mockup to article image">
+          </a>
         </div>
-        <ul class="article-palette"> <em><strong>Palette</strong></em>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-        </ul>
+        <div class="article-palette">
+          <p><em><strong>Palette</strong></em></p>
+          <ul>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+          </ul>
+        </div>
       </article>
 
       <article class="article">
         <h2>Udacity: Animal Trading Card</h2>
-        <div>
-          <a class="article-picture" href='animal_trading_card/card.html'><img class="article-picture" src="1-10-project-animal-trading-cards2x.jpg" alt="Animal trading card image"></a>
+        <div class="container">
+          <a href='animal_trading_card/card.html'>
+            <img class="article-picture" src="img/1-10-project-animal-trading-cards2x.jpg" alt="Animal trading card image">
+          </a>
         </div>
-        <ul class="article-palette"> <em><strong>Palette</strong></em>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-        </ul>
+        <div class="article-palette">
+          <p><em><strong>Palette</strong></em></p>
+          <ul>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+          </ul>
+        </div>
       </article>
 
       <article class="article">
         <h2>Udacity: Pixel Art Maker</h2>
-        <div>
-          <a class="article-picture" href='pixel_art_maker/index.html'><img class="article-picture" src="3-4-project-pixel-art-maker2x.jpg" alt="Pixel art maker image"></a>
+        <div class="container">
+          <a href='pixel_art_maker/index.html'>
+            <img class="article-picture" src="img/3-4-project-pixel-art-maker2x.jpg" alt="Pixel art maker image">
+          </a>
         </div>
-        <ul class="article-palette"> <em><strong>Palette</strong></em>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-        </ul>
+        <div class="article-palette">
+          <p><em><strong>Palette</strong></em></p>
+          <ul>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+          </ul>
+        </div>
       </article>
 
       <article class="article">
         <h2>Udacity Lesson 15 project: Project Update part2</h2>
-        <div>
-          <a class="article-picture" href='15_project_update_part2/index.html'><img class="article-picture" src="https://s3.amazonaws.com/video.udacity-data.com/topher/2017/September/59ce984a_2-8-optimization2x/2-8-optimization2x.jpg" alt="Lesson 15 project image"></a>
+        <div class="container">
+          <a href='15_project_update_part2/index.html'>
+            <img class="article-picture" src="https://s3.amazonaws.com/video.udacity-data.com/topher/2017/September/59ce984a_2-8-optimization2x/2-8-optimization2x.jpg" alt="Lesson 15 project image">
+          </a>
         </div>
-        <ul class="article-palette"> <em><strong>Palette</strong></em>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-          <li><img src="">#adede</li>
-        </ul>
+        <div class="article-palette">
+          <p><em><strong>Palette</strong></em></p>
+          <ul>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+            <li><img class="palette-color" src="https://www.beautycolorcode.com/123456.png" alt="color-palette">#123456</li>
+          </ul>
+        </div>
       </article>
 
     </section>
 
   </main>
+
 
   <script>
     const menu = document.getElementById("hamburger-menu");
@@ -121,6 +151,7 @@
       e.stopPropagation();
     });
   </script>
+
 </body>
 
 </html>
