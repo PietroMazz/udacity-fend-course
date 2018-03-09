@@ -1,86 +1,126 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href='styles.css' type='text/css'>
   <title>PietroMazz Portfolio</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <div>
-      <a href=""><h1 class="logo">Welcome!</h1></a>
-    </div>
-  </header>
-  <div class="container">
+  <main>
 
-  </div>
+    <header class="header">
+      <h1><a class="header-title" href=""> PietroMazz Portfolio </a></h1>
+      <img class="header-logo" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38745/preview.svg" alt="logo">
+    </header>
 
-  <div class="container">
-    <div class="info">
-      <img class="icon" src="25231.png" alt="GitHub logo"> Link to my GitHub: <a href="https://github.com/PietroMazz">Click!</a>
-    </div>
+    <header class="fixed-header">
+      <div id="hamburger-menu"><i class="fas fa-bars touch-button"></i></div>
+      <h1><a class="header-title" href=""> PietroMazz Portfolio </a></h1>
+      <img class="header-logo" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/38745/preview.svg" alt="logo">
+    </header>
 
-  </div>
+    <aside id="drawer" class="navigation-menu">
+      <div id="close-menu"><i class="fas fa-times touch-button"></i></div>
+      <h2>NAVIGATION MENU</h2>
+      <ul>
+        <a href="">
+          <div class="menu-item">
+            <li>PROJECTS</li>
+          </div>
+        </a>
+      </ul>
+    </aside>
 
+    <section class="container social">
+      <ul class="social-links">
+        <div>
+          <li>GitHub profile</li>
+        </div>
+        <div>
+          <li>LinkedIn profile</li>
+        </div>
+        <div>
+          <li>Udacity profile</li>
+        </div>
+    </section>
 
-  <div class="container">
+    <section class="container welcome">
+      <img class="welcome-image" src="18_9.png" alt="welcome-image">
+      <h2>Front-End Web Developer</h2>
+      <p>My Projects:</p>
+    </section>
 
-    <div class="article">
-      <div class="article-header">
-        <h2>Google Front-End Web Developer Scholarship projects</h2>
-        <img class="article-picture" src="1-6-project-mockup-to-article2x.jpg" alt="Mockup to article image">
-      </div>
-      <div class="article-content">
-        <p>Here we have the link:</p>
-        <ul>
-          <li><a href='mockup_to_article/index.html'>Project 1: Mockup to Article</a></li>
+    <section class="container projects">
+
+      <article class="article">
+        <h2>Udacity: Mockup to Article</h2>
+        <div>
+          <a class="article-picture" href='mockup_to_article/index.html'><img class="article-picture" src="1-6-project-mockup-to-article2x.jpg" alt="Mockup to article image"></a>
+        </div>
+        <ul class="article-palette"> <em><strong>Palette</strong></em>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
         </ul>
-      </div>
-    </div>
+      </article>
 
-    <div class="article">
-      <div class="article-header">
-        <h2>Google Front-End Web Developer Scholarship projects</h2>
-        <img class="article-picture" src="1-10-project-animal-trading-cards2x.jpg" alt="Animal trading card image">
-      </div>
-      <div class="article-content">
-        <p>Here we have the link:</p>
-        <ul>
-          <li><a href='animal_trading_card/card.html'>Project 2: Animal Trading Cards</a></li>
+      <article class="article">
+        <h2>Udacity: Animal Trading Card</h2>
+        <div>
+          <a class="article-picture" href='animal_trading_card/card.html'><img class="article-picture" src="1-10-project-animal-trading-cards2x.jpg" alt="Animal trading card image"></a>
+        </div>
+        <ul class="article-palette"> <em><strong>Palette</strong></em>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
         </ul>
-      </div>
-    </div>
+      </article>
 
-    <div class="article">
-      <div class="article-header">
-        <h2>Google Front-End Web Developer Scholarship projects</h2>
-        <img class="article-picture" src="3-4-project-pixel-art-maker2x.jpg" alt="Pixel art maker image">
-      </div>
-      <div class="article-content">
-        <p>Here we have the link:</p>
-        <ul>
-          <li><a href='pixel_art_maker/index.html'>Project 3: Pixel Art Maker</a></li>
+      <article class="article">
+        <h2>Udacity: Pixel Art Maker</h2>
+        <div>
+          <a class="article-picture" href='pixel_art_maker/index.html'><img class="article-picture" src="3-4-project-pixel-art-maker2x.jpg" alt="Pixel art maker image"></a>
+        </div>
+        <ul class="article-palette"> <em><strong>Palette</strong></em>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
         </ul>
-      </div>
-    </div>
+      </article>
 
-    <div class="article">
-      <div class="article-header">
-        <h2>Google Front-End Web Developer Scholarship projects</h2>
-        <img class="article-picture" src="https://s3.amazonaws.com/video.udacity-data.com/topher/2017/September/59ce984a_2-8-optimization2x/2-8-optimization2x.jpg" alt="Lesson 15 project image">
-      </div>
-      <div class="article-content">
-        <p>Here we have the link:</p>
-        <ul>
-          <li><a href='15_project_update_part2/index.html'>Lesson 15 project: Project Update part2</a></li>
+      <article class="article">
+        <h2>Udacity Lesson 15 project: Project Update part2</h2>
+        <div>
+          <a class="article-picture" href='15_project_update_part2/index.html'><img class="article-picture" src="https://s3.amazonaws.com/video.udacity-data.com/topher/2017/September/59ce984a_2-8-optimization2x/2-8-optimization2x.jpg" alt="Lesson 15 project image"></a>
+        </div>
+        <ul class="article-palette"> <em><strong>Palette</strong></em>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
+          <li><img src="">#adede</li>
         </ul>
-      </div>
-    </div>
+      </article>
 
-  </div>
+    </section>
+
+  </main>
+
+  <script>
+    const menu = document.getElementById("hamburger-menu");
+    const closeMenu = document.getElementById("close-menu");
+    const drawer = document.getElementById("drawer");
+    menu.addEventListener('click', function(e) {
+      drawer.classList.toggle('nav-open');
+      e.stopPropagation();
+    });
+    closeMenu.addEventListener('click', function(e) {
+      drawer.classList.toggle('nav-open');
+      e.stopPropagation();
+    });
+  </script>
 </body>
 
 </html>
