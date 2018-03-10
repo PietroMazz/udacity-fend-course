@@ -1,45 +1,49 @@
-// Select color input
-// Select size input
+//pixel_canvas is the only variable I need, because I'll use it many times
 
-// When size is submitted by the user, call makeGrid()
-var pixel_canvas = $('#pixel_canvas');
+var pixel_canvas = document.getElementById('pixel_canvas');
 
-function makeGrid(rows, columns)
+/*
+I need a makeGrid() function that create a grid of the
+input_width and input_height dimensions
+*/
+
+function makeGrid()
 {
-  pixel_canvas.find('*').remove();
-  var i;
-  for (i = 0; i < rows; i++)
+  //If there is any table I delete it
+  while (pixel_canvas.firstChild)
   {
-    pixel_canvas.append('<tr></tr>');
-  }
-  for (i = 0; i < columns; i++)
+    pixel_canvas.removeChild(pixel_canvas.firstChild);
+  };
+
+  //Then I get the user input
+  let input_width = document.getElementById('input_width').value;
+  let input_height = document.getElementById('input_height').value;
+  //I create a cycle for the rows
+  for (let i = 0; i < input_height; i++)
   {
-    pixel_canvas.find('tr').append('<td></td>');
+    const row = pixel_canvas.insertRow(i);
+    // And a cycle for the columns
+    for (let j = 0; j < input_width; j++)
+    {
+      const cell = row.insertCell(j);
+      //Then for each cell I add an eventListener for left click and right click
+      cell.addEventListener("click", function ()
+      {
+        cell.style.backgroundColor = document.getElementById('primaryColorPicker').value;
+      });
+      cell.addEventListener("contextmenu", function (event)
+      {
+        event.preventDefault();
+        cell.style.backgroundColor = document.getElementById('secondaryColorPicker').value;
+      });
+
+    }
   }
-};
+}
 
-function inputHeight()
-{
-  return Number($('#input_height').val());
-};
-
-function inputWidth()
-{
-  return Number($('#input_width').val());
-};
-
-$('#submit').click(function (event)
+//First of all I need to prevent submit defaul behaviour on click
+document.getElementById('submit').addEventListener("click", function (event)
 {
   event.preventDefault();
-  makeGrid(inputHeight(), inputWidth());
-  console.log($('td'));
-  $('td').click(function (event)
-  {
-    $(this).css('background-color', colorSwitch());
-  })
-});
-
-function colorSwitch()
-{
-  return String($('#colorPicker').val());
-};
+  makeGrid();
+})
