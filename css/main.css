@@ -49,6 +49,7 @@ object {
 
 .header {
   position: fixed;
+  display: flex;
   top: 0;
   height: 72px;
   width: 100%;
@@ -56,24 +57,24 @@ object {
   background-color: #91daed;
   border-bottom: 0.5px solid black;
   padding-top: 1em;
+  justify-content: space-between;
 }
 
 .header-logo {
   max-width: 50px;
-  float: right;
   margin-right: 20px;
   margin-left: auto;
 }
 
 .header .touch-button {
-  float: left;
   margin-left: 12px;
   margin-right: auto;
 }
 
 .header h1 {
   font-style: italic;
-  text-align: center;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .fa-bars,
