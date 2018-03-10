@@ -1,7 +1,6 @@
 /* COMMON */
 
 body {
-  position: absolute;
   width: 100%;
   height: 100%;
   font-size: 16px;
@@ -15,12 +14,22 @@ body {
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li {
   color: black;
 }
 
@@ -29,7 +38,10 @@ a {
   display: block;
 }
 
-img, embed, video, object {
+img,
+embed,
+video,
+object {
   max-width: 100%;
 }
 
@@ -64,7 +76,8 @@ img, embed, video, object {
   text-align: center;
 }
 
-.fa-bars, .fa-times {
+.fa-bars,
+.fa-times {
   min-width: 40px;
   min-height: 40px;
 }
@@ -74,7 +87,6 @@ img, embed, video, object {
 .navigation-menu {
   height: 100%;
   background-color: #91daed;
-  ;
   position: absolute;
   top: 0;
   z-index: 2;
@@ -141,7 +153,8 @@ img, embed, video, object {
 
 /* WELCOME */
 
-.welcome h2, .welcome p {
+.welcome h2,
+.welcome p {
   text-align: right;
   margin-right: 0.5em;
 }
@@ -203,16 +216,17 @@ img, embed, video, object {
 
 .article-picture {
   width: 200px;
-  height: 200px;
-  float: left;
+  height: auto;
+  margin-left: 0;
+  margin-right: auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.article-picture:nth-of-type(2n+1) {
-  width: 200px;
-  height: 200px;
-  float: right;
+.article:nth-child(2n+1) .container a {
+  margin-right: 0;
+  margin-left: auto;
 }
+
 
 .palette-color {
   max-width: 20px;
@@ -223,32 +237,28 @@ img, embed, video, object {
 /* MEDIA QUERIES */
 
 @media screen and (max-width:320px) {
-  .article-palette {
-    display: none;
-  }
-  .article .container {
-    width: 100%;
-  }
-}
 
-@media screen and (max-width:424px) {
   body {
     font-size: 12px;
   }
   .article-picture {
     width: 100px;
-    height: 100px;
+    height: auto;
   }
+
 }
 
-@media screen and (min-width:700px) {
-  #hamburger-menu, .navigation-menu {
+@media screen and (min-width:600px) {
+
+  #hamburger-menu,
+  .navigation-menu {
     display: none;
   }
   .header {
     position: relative;
   }
-  .welcome h2, .welcome p {
+  .welcome h2,
+  .welcome p {
     text-align: center;
   }
   .projects {
@@ -266,9 +276,11 @@ img, embed, video, object {
   .social-links {
     margin-top: 0;
   }
+
 }
 
 @media screen and (min-width:1200px) {
+
   main {
     width: 1200px;
     margin: 0 auto;
@@ -280,4 +292,5 @@ img, embed, video, object {
   section {
     background-color: #c9e6ef;
   }
+
 }
