@@ -1,0 +1,71 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #003d6b;
+  font-family: 'Arial', serif;
+}
+
+header {
+  top: 0;
+  height: 72px;
+  padding: 10px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  color: white;
+  height: 5%;
+  max-height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 45px;
+  font-family: 'Arial';
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 95%;
+}
+
+.locations-list {
+  padding: 0;
+  background-color: white;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.locations-list li {
+  list-style-type: none;
+}
+
+#map {
+  height: 100%;
+}
